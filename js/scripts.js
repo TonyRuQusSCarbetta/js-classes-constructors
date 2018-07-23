@@ -28,6 +28,9 @@ class Nurse extends HospitalEmployee {
   addCertification(newCertification) {
   this._certifications.push(newCertification)
   }
+  static generatePassword() {
+    return Math.floor(Math.random() * 10000);
+  }
 }
 
 const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
